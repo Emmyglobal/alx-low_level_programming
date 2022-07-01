@@ -1,6 +1,6 @@
 #!/bin/bash
 #include <stdio.h>
-/*
+/**
 * main - Main  entry
 * Return: Always 0 (Success)
 	*/
