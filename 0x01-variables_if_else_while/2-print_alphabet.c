@@ -1,8 +1,6 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /*
- * main - prints the alphabet in lowercases
+ * main - prints the alphabet in lowercase,
  * Description - main value
  * followed by new line
  * Return: Always 0 (success)
@@ -15,6 +13,6 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
