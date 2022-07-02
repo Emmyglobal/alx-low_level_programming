@@ -1,8 +1,6 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/*
- * main - prints alphabets in lowercase and then in uppercase
+/**
+ *main - prints alphabets in lowercase and then in uppercase
  * followed by new line
  * Return: 0 if (Successful)
  */

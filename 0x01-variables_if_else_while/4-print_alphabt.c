@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- * main - print all letters in lowercase except e and q
+/**
+ *main - print all letters in lowercase except e and q
  * followed by a new line
- * Return: 0 if (Successful)
+ * followed by a successful)
  */
 int main(void)
 {
@@ -16,6 +16,6 @@ int main(void)
 		}
 		ch++;
 	}
-	putcha('\n');
+	putchar('\n');
 	return (0);
 }
