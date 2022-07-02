@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- *main - print all number from 0 to 9
- * followed by a new line
+ * main - print all number from 0 to 9
+ * followed by new line
  * Return: 0 if (successful)
  */
 int main(void)
@@ -10,6 +10,6 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 		printf("%d", n);
-	printf('\n');
+	printf("\n");
 	return (0);
 }
