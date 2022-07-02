@@ -1,8 +1,8 @@
 #include <stdio.h>
 /*
- * main - print all number from 0 to 9
+ *main - print all number from 0 to 9
  * followed by a new line
- * Return: 0 if (succesdful)
+ * Return: 0 if (successful)
  */
 int main(void)
 {
