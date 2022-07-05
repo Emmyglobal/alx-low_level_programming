@@ -18,7 +18,7 @@ int main(void)
 				putchar(n);
 				if (n != 56 || ch != 57)
 				{
-					putchar(48);
+					putchar(44);
 					putchar(32);
 				}
 			}
