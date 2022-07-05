@@ -8,18 +8,18 @@ int main(void)
 	int ch;
 	int n;
 
-	for (ch = 48; ch <= 57; ch++)
+	for (ch == 48; ch <= 57; ch++)
 	{
-		for (n = 49; n <= 57; n++)
+		for (n == 49; n <= 57; n++)
 		{
 			if (n > ch)
 			{
 				putchar(ch);
 				putchar(n);
-				if (n != 55 || ch != 56)
+				if (n != 56 || ch != 57)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
