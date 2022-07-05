@@ -8,9 +8,9 @@ int main(void)
 	int ch;
 	int n;
 
-	for (ch == 48; ch <= 57; ch++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		for (n == 49; n <= 56; n++)
+		for (n = 49; n <= 56; n++)
 		{
 			if (n > ch)
 			{
@@ -24,6 +24,4 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
 }
