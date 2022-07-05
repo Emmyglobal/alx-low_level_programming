@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int n;
 	int ch;
+	int n;
 
-	for (n == 48; n <= 57; n++)
+	for (ch == 48; ch <= 57; ch++)
 	{
-		for (ch == 49; ch <= 56; ch++)
+		for (n == 49; n <= 56; n++)
 		{
-			if (ch > n)
+			if (n > ch)
 			{
-				putchar(n);
 				putchar(ch);
+				putchar(n);
 				if (n != 56 || ch != 57)
 				{
 					putchar(48);
