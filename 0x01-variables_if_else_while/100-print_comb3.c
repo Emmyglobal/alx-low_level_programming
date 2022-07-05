@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - To print all possible two digits
- * move to another line
+ * main - prints number from 00 to 89
  * Return: Always 0 (successful)
  */
 int main(void)
@@ -22,8 +21,9 @@ int main(void)
 					putchar(48);
 					putchar(32);
 				}
-		return (0);
 			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
