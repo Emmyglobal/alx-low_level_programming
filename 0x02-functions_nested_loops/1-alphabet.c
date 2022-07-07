@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_alphabet - Begin entry
- * Return: Always 0 (successful)
+ * Return: 0
  */
 void print_alphabet(void)
 {
@@ -13,5 +13,4 @@ void print_alphabet(void)
 		_putchar(n);
 	}
 	_putchar('\n');
-	return (0);
 }
