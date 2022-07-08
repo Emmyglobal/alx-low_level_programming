@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * main - assigns a random number to a value of n everytime
- * it executes and prints it
- * Return: 0 if(successful)
+ * main - tests function that prints if integer is positive or negative
+ * * Return: 0
  */
+
 int main(void)
 {
 	int i;
