@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "main.h"
 
 void positive_or_negative(int i)
 {
@@ -18,9 +17,10 @@ void positive_or_negative(int i)
 	return (0);
 }
 /**
- * main - debugging example
- * Return: 0
+ * main - check if integer is positve or negative
+ * Return: 0 always
  */
+
 int main(void)
 {
 	int i;
