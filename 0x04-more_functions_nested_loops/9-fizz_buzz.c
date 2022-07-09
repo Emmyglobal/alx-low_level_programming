@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * main - program that prints from 1 to 100 followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for multiple of five prints Buzz
  * Return: Always 0 (success)
  */
 int main(void)
