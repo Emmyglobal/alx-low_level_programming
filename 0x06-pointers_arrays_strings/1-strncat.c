@@ -4,7 +4,7 @@
  * @*dest: Character parameter
  * @*src: Character parameter
  * @n: Integer parameter
- * Return: *dest
+ * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
 {
