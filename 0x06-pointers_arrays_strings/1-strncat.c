@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
- * _strncat - function to append some charx
- * @*dest: first parameter
- * @*src: second parameter
+ * _strncat - Function to append some charx
+ * @dest: first parameter
+ * @src: second parameter
  * @n: third parameter
- * Return: string
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
