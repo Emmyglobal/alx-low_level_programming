@@ -1,9 +1,11 @@
 #include "main.h"
-#include <string.h>                             /**
- * *_strncat - A function that concatenates two strings
- * @*dest: Character parameter
- * @*src: Character parameter
- * @n: Integer parameter
+#include <string.h>
+
+/**
+ * _strncat - function to append some charx
+ * @*dest: first parameter
+ * @*src: second parameter
+ * @n: third parameter
  * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
