@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
 * create_array -> creating array
@@ -18,7 +18,9 @@ char *create_array(unsigned int size, char c)
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
+	{
 		s[i] = c;
+	}
 
 	return (s);
 }
