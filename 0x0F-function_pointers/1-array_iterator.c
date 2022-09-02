@@ -13,7 +13,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	for (int i = 0; i < size; i++)
 	{
-		printf("action[%d]: %d \n", i,  *array);
+		printf("%d \n", *array);
 		array++;
 	}
 }
