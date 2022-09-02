@@ -11,9 +11,11 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	for (size_t i = 0; i < size; i++)
+	if (array == NULL || action == NULL)
+		return;
+	while (size-- > 0)
 	{
-		printf("%d \n", *array);
+		action(*array);
 		array++;
 	}
 }
