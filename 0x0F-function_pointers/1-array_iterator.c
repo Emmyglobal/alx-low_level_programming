@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "function_pointers.h"
 
-/*
- * array_iterator - > a function that executes function given as a parameter
- * @ *array: integer parameter
- * @void (*action)(int): array parameter
- * @size_t size: array size
- * return: always 0
+/**
+ * array_iterator - > function that executes function given as a parameter
+ * @array: int array parameter
+ * @action: pointer to the function
+ * @size: array size
+ * return: nothing
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -15,5 +16,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		printf("action[%d]: %d \n", i,  *array);
 		array++;
 	}
-	return (0);
 }
