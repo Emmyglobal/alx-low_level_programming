@@ -10,6 +10,8 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	if (array == NULL || cmp == NULL)
+		return;
 	scanf("%d", &cmp);
 	for (int c = 0; c < size; c++)
 	{
