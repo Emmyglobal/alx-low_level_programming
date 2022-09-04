@@ -6,23 +6,18 @@
  * @array: array parameter
  * @size: number of elements in the array
  * @cmp: pointer to the function to be used
- * return: 0 if false, something else otherwise.
+ * Return: 0 if false, something else otherwise.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	int c;
+
 	if (array == NULL || cmp == NULL)
-		return;
-	scanf("%d", &cmp);
+		return (-1);
 	for (int c = 0; c < size; c++)
 	{
-		if (array[c] == cmp)
-		{
-			printf("%d \n", cmp);
-			break;
-		}
-		return (0);
+		if (cmp(array[c]) != 0)
+			return (c);
 	}
-	if (int c == size || size <= 0)
-		printf("failed");
 	return (-1);
 }
