@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "3-cala.h"
+#include <stdlib.h>
+#include "3-calc.h"
 
 /**
  * main -> main function for all other functions

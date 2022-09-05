@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "3-calc.h"
 /**
  * 3-op_functions ->function that selects correct function asked by the user
  * @s: pointer to variable
