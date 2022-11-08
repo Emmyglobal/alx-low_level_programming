@@ -1,4 +1,3 @@
-#!/bin/bash
 !<arch>
 main.h/         0           0     0     644     687       `
 #ifndef MAIN_H
