@@ -1,4 +1,4 @@
-#include "main.h"
+#include "m.h"
 
 /**
  * print_school
@@ -31,5 +31,4 @@ void print_school(void)
 	printf("j#0000000000000@@+wgdA]+J00000000000000\n");
 	printf("j#0000000000000k?qwgdC=]4#0000000000000\n");
 	printf("j#00000000000000w]+]++qw#00000000000000\n");
-	printf("\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
-}
+	
