@@ -1,45 +1,54 @@
 #include "main.h"
-#inclide <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * argstostr - Concatenates all arguments of the program into a string;
- *             arguments are separated by a new line in the string.
- * @ac: The number of arguments passed to the program.
- * @av: An array of pointers to the arguments.
- *
- * Return: If ac == 0, av == NULL, or the function fails - NULL.
- *         Otherwise - a pointer to the new string.
+ * *str_concat - function that concatenates two strings.
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer
  */
-char *argstostr(int ac, char **av)
+
+char *str_concat(char *s1, char *s2)
 {
-	char *str;
-	int arg, byte, index, size = ac;
+	int w, x, y;
+	char *A;
 
-	if (ac == 0 || av == NULL)
-		return (NULL);
+	y = 0;
+	w = 0;
+	x = 0;
 
-	for (arg = 0; arg < ac; arg++)
+	if (s1 == NULL)
 	{
-		for (byte = 0; av[arg][byte]; byte++)
-			size++;
+		s1 = "";
 	}
 
-	str = malloc(sizeof(char) * size + 1);
-
-	if (str == NULL)
-		return (NULL);
-
-	index = 0;
-
-	for (arg = 0; arg < ac; arg++)
+	if (s2 == NULL)
 	{
-		for (byte = 0; av[arg][byte]; byte++)
-			str[index++] = av[arg][byte];
-
-		str[index++] = '\n';
+		s2 = "";
 	}
 
-	str[size] = '\0';
+	while (*(s1 + w))
+		w++;
+	while (*(s2 + x))
+		x++;
+	x++;
 
-	return (str);
+	A = malloc((w + x) * sizeof(char));
+	if (A == NULL)
+	{
+		return (NULL);
+	}
+
+	for (y = 0; w > y; y++)
+	{
+		*(A + y) = *(s1 + y);
+	}
+
+	for (y = w; y < (w + x); y++)
+	{
+		*(A + y) = *(s2 + y - w);
+	}
+
+	return (A);
 }
