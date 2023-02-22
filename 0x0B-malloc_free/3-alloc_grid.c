@@ -1,41 +1,40 @@
 #include "main.h"
+#include <stdio.h>
+#include  <stdlib.h>
 
 /**
-* alloc_grid -> allocatingn 2d array
-* @width: width of an array
-* @height: height of an array
-* Return: a pointer to a allocated grid
-*/
+ * **alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: int
+ * @height: int
+ * Return: 2d array
+ */
+
 int **alloc_grid(int width, int height)
 {
-	int i, j, k, l;
-	int **a;
+int **tab, i, j;
+tab = malloc(sizeof(*tab) * height);
 
-	if (width <= 0 || height <= 0)
-		return (NULL);
-	a = malloc(height * sizeof(int *));
-	if (a == NULL)
-	{
-		free(a);
-		return (NULL);
-	}
+if (width <= 0 || height <= 0 || tab == 0)
+	return (NULL);
+
+else
+{
 	for (i = 0; i < height; i++)
 	{
-		a[i] = malloc(width * sizeof(int));
-		if (a[i] == NULL)
+		tab[i] = malloc(sizeof(**tab) * width);
+		if (tab[i] == 0)
 		{
-			for (j = i; j >= 0; j--)
-			{
-				free(a[j]);
-			}
-			free(a);
+			/*Free everything if malloc fails*/
+			while (i--)
+				free(tab[i]);
+			free(tab);
 			return (NULL);
 		}
+
+		for (j = 0; j < width; j++)
+			tab[i][j] = 0;
 	}
-for (k = 0; k < height; k++)
-	{
-		for (l = 0; l < width; l++)
-			a[k][l] = 0;
-	}
-	return (a);
+}
+
+return (tab);
 }
