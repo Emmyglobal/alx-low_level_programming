@@ -5,14 +5,13 @@
 /**
  * argstostr - Concatenates all arguments of the program into a string;
  *             arguments are separated by a new line in the string.
- * __strlen -> a function that counts lenght.
+ * __strlen  - A function that finds how many character inside av.
  * @ac: The number of arguments passed to the program.
  * @av: An array of pointers to the arguments.
  *
  * Return: If ac == 0, av == NULL, or the function fails - NULL.
  *         Otherwise - a pointer to the new string.
  */
-
 int __strlen(char **av)
 {
 	int i, j, len = 0;
