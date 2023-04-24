@@ -13,12 +13,12 @@ int _strlen(char *s);
  * Return: success
  */
 
-dog_t *new_dog(char *name, float age, *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	char *dup_name, *dup_owner;
 
-	if (name == NULL || owner = NULL)
+	if (name == NULL || owner == NULL)
 		return (NULL);
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
@@ -31,7 +31,7 @@ dog_t *new_dog(char *name, float age, *owner)
 		return (NULL);
 	}
 	(*dog).name = dup_name;
-	(*dog).age;
+	(*dog).age = age;
 
 	dup_owner = dup(owner);
 	if (dup_owner == NULL)
@@ -41,7 +41,7 @@ dog_t *new_dog(char *name, float age, *owner)
 		return (NULL);
 	}
 	(*dog).owner = dup_owner;
-	return (dog)
+	return (dog);
 }
 
 /**
@@ -67,7 +67,7 @@ char *dup(char *s)
 	while (s[i] != '\0')
 	{
 		res[i] = s[i];
-		i++
+		i++;
 	}
 	res[i] = '\0';
 	return (res);
