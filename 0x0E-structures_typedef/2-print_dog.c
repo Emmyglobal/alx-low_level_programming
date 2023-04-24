@@ -3,9 +3,12 @@
 #include <stdlib.h>
 
 /**
- * print_dog - Prints a struct dog.
- * @d: The struct dog to be printed.
+ * print_dog - Function that prints a struct dog
+ * @d: Dog info
+ *
+ * Return: nothing
  */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
