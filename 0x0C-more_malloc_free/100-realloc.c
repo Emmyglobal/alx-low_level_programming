@@ -3,8 +3,8 @@
 /**
  * _realloc - reallocates memory
  * @ptr: pointer to memory for old string
- * @old: size of old string
- * @new: size of new string
+ * @old_size: size of old string
+ * @new_size: size of new string
  * Return: pointer to new string
  */
 
