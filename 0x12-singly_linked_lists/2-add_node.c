@@ -38,9 +38,8 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 		content[i] = str[i];
-	if (node_to_be_added->str == NULL)
+	if (node_to_be_added == NULL)
 	{
-		free(node_to_be_added);
 		free(content);
 		return (NULL);
 	}
