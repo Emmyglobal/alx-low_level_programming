@@ -14,15 +14,12 @@ size_t print_list(const list_t *h)
 
 	if (h == NULL)
 		printf("[0] (nill)");
-	
-	struct list_s *ptr = NULL;
-	ptr = h;
 
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 		count++;
-		printf("%d ", ptr->data);
-		ptr = ptr->link;
+		printf("%s\n", h->str);
+		h = h->next;
 	}
 	return (count);
 }
