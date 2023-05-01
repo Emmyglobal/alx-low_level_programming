@@ -11,6 +11,8 @@ void free_listint2(listint_t **head)
 {
 	listint_t *delete_all;
 
+	if (!head)
+		return;
 	while (*head)
 	{
 		delete_all = *head;
