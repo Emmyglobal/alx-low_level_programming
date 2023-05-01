@@ -12,15 +12,12 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *add_end, *temp;
 
-	/*create a temporary node */
 	temp = malloc(sizeof(listint_t));
 	temp->n = n;
 	temp->next = NULL;
 
-	/*Transver till the end*/
 	while (add_end->next != NULL)
 		add_end = add_end->next;
-	/*Replace the temp node with our new node*/
 	add_end->next = temp;
 
 	if (add_end == NULL)
