@@ -1,31 +1,8 @@
-File 0-print_listint.c: This is a function that prints all the elements of a listint_t list.
+# MORE SINGLY LIST
 
-File 1-listint_len.c: This is a function that returns the number of elements in a linked listint_t list.
-
-File 2-add_nodeint.c: This is a function that adds a new node at the beginning of a listint_t list.
-
-File 3-add_nodeint_end.c: This is a function that adds a new node at the end of a listint_t list.
-
-File 4-free_listint.c: This is a function that frees a listint_t list.
-
-File 5-free_listint2.c: This is a function that frees a listint_t list and sets the head pointer to NULL.
-
-File 6-pop_listint.c: This is a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
-
-File 7-get_nodeint.c: This is a function that returns the nth node of a listint_t linked list.
-
-File 8-sum_listint.c: This is a function that returns the sum of all the data (n) of a listint_t linked list.
-
-File 9-insert_nodeint.c: This is a function that inserts a new node at a given position.
-
-File 10-delete_nodeint.c: This is a function that deletes the node at index index of a listint_t linked list.
-
-File 100-reverse_listint.c: This is a function that reverses a linked list.
-
-File 101-print_listint_safe.c: This is a function that prints a listint_t linked list, safely.
-
-File 102-free_listint_safe.c: This is a function that frees a listint_t list, safely.
-
-File 103-find_loop.c: This is a function that finds the loop in a linked list.
-
-File lists.h: This is the header file containing all these function prototypes and the data structure listint_t.
+## Doing the following
+- Insertion -> Adds an element at the beginnig and the end of the list.
+- Deletion - Deletes an element at the beginning and end of the list.
+- Display - Count the number of nodes and display the complete list.
+- Search - Searches an alement using the given key.
+- Deletes - Deletes an element using the given key.
