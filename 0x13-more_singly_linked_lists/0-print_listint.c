@@ -13,6 +13,8 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
+		if (h == NULL)
+			printf("Empty list!\n");
 		printf("%d\n", h->n);
 		count++;
 		h = h->next;
