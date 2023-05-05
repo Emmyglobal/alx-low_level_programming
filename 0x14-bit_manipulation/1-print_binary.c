@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
  * print_binary -> Prints the binary equivalent of a decimal number
