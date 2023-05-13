@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 
 /**
@@ -11,9 +10,8 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fread, fwrite;
+	ssize_t file, fread, fwrite;
 	char *totalSize;
-	FILE *file;
 
 	totalSize = malloc(sizeof(char) * letters);
 	if (totalSize == NULL)
@@ -21,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	file = fopen(filename, O_RDONLY);
+	file = open(filename, O_RDONLY);
 
 	if (file == -1)
 		return (0);
