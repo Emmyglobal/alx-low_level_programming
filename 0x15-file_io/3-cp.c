@@ -12,9 +12,9 @@ int main(int argc, char **argv)
 	int a, b, c;
 	char buf[1024];
 
-	if (argc !=3)
+	if (argc != 3)
 	{
-		dprintf(STDERR_FILNO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	a = open(argv[1], O_RDONLY);
