@@ -13,7 +13,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	file = open(filename, O_APPEND | O_RDWR);
 	if (file == -1)
-		return -1;
+		return (-1);
 
 	if (text_content == NULL)
 	{
@@ -22,7 +22,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	else
 		return (-1);
-	
 	close(file);
 	return (1);
 }
