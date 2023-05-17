@@ -77,9 +77,6 @@ void print_class(unsigned char *e_ident)
 		case ELFCLASSNONE:
 			printf("none\n");
 			break;
-		case ELFCLASSNONE:
-			printf("none\n");
-			break;
 		case ELFCLASS32:
 			printf("ELF32\n");
 			break;
@@ -128,8 +125,8 @@ void print_version(unsigned char *e_ident)
 	switch (e_ident[EI_VERSION])
 	{
 		case EV_CURRENT:
-			printf(" (current)\n"):
-				break;
+			printf(" (current)\n");
+			break;
 		default:
 			printf("\n");
 			break;
@@ -224,7 +221,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 			printf("CORE (Core file)\n");
 			break;
 		default:
-			print("<unknown: %x>\n", e_type);
+			printf("<unknown: %x>\n", e_type);
 	}
 }
 
@@ -247,7 +244,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 		printf("%#x\n", (unsigned int)e_entry);
 
 	else
-		printf("%#1x\n", e_entry);
+		printf("%#lx\n", e_entry);
 }
 
 /**
@@ -260,7 +257,7 @@ void close_elf(int elf)
 {
 	if (close(elf) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n, elf");
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", elf);
 		exit(98);
 	}
 }
