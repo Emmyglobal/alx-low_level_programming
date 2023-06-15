@@ -3,10 +3,9 @@
 
 /**
  * print_dlistint - prints all the elements of a list
- * @dlistint_t: given list
- * @h: pointer to the head node
- *
- * Return: number of nodes
+
+ * @h: Head of the list
+ * Return: number of items in the list
  */
 
 size_t print_dlistint(const dlistint_t *h)
