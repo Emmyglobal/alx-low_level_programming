@@ -2,9 +2,10 @@
 #include "lists.h"
 
 /**
- * print_distint - prints all the elementsof a list
+ * print_dlistint - prints all the elements of a list
  * @dlistint_t: given list
  * @h: pointer to the head node
+ *
  * Return: number of nodes
  */
 
