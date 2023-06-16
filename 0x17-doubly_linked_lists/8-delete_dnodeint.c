@@ -1,45 +1,32 @@
 #include "lists.h"
-
 /**
- * delete_dnodeint_at_index -> deletes node at index of a list
- * @head: pointer to the head
- * @index: index where node will be deleted
- * Return: 1 on success and -1 if it failed
- */
-
+  * delete_dnodeint_at_index - deletes a node at an index
+  * @head: double pointer to the head of the list
+  * @index: index of the node to delete
+  * Return: value of the node deleted
+  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *current = *head;
-	dlistint_t *temp = NULL;
-	unsigned int i = 0;
+	dlistint_t *tmp_del, *tmp_head;
 
-	if (*head == NULL)
+	if (!head || !*head)
 		return (-1);
-
+	tmp_head = *head;
 	if (index == 0)
 	{
-		*head = current->next;
-		if (*head != NULL)
-			(*head)->prev = NULL;
-		free(current);
+		*head = (*head)->next;
+		(*head)->prev = NULL;
+		free(tmp_head);
 		return (1);
 	}
-
-	while (i < index && current != NULL)
-	{
-		current = current->next;
-		i++;
-	}
-
-	if (current == NULL)
+	for ( ; index > 1 && tmp_head && tmp_head->next; index--)
+		tmp_head = tmp_head->next;
+	if (!tmp_head->next)
 		return (-1);
-
-	temp = current->prev;
-	temp->next = current->next;
-
-	if (current->next != NULL)
-		current->next->prev = temp;
-
-	free(current);
-	return (-1);
+	tmp_del = tmp_head->next;
+	tmp_head->next = tmp_del->next ? tmp_del->next : NULL;
+	if (tmp_del->next)
+		tmp_del->next->prev = tmp_head;
+	free(tmp_del);
+	return (1);
 }
