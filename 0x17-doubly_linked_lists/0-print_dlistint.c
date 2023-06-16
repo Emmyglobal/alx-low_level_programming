@@ -9,7 +9,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t i = 0;
-	
+
 	while (h)
 	{
 		i++;/*Iterate thru d-linked list*/
@@ -17,4 +17,4 @@ size_t print_dlistint(const dlistint_t *h)
 		h = h->next;
 	}
 	return (i);
-}
+
