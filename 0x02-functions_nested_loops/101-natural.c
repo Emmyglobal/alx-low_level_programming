@@ -2,9 +2,9 @@
 #include "main.h"
 
 /*
- * print_sum_mul_3 -> prints the sum of all the multiples of 3 0r 5
- * Description: prints sum of multiples of 3 0r 5 below 1024
- * Return: Void.
+ * print_sum_mul_3 - prints the sum
+ * Description: sum of multiples of 3 0r 5 below 1024
+ * Return: void.
  */
 
 void print_sum_mul_3(void)
@@ -22,7 +22,7 @@ void print_sum_mul_3(void)
 }
 
 /*
- * main -> check the code
+ * main - runs the header function
  * Description: a function that runs our function
  * Return: Always 0.
  */
