@@ -3,7 +3,8 @@
 
 /*
  * print_sum_mul_3 -> prints the sum of all the multiples of 3 0r 5
- * Return: Nothing
+ * Description: prints sum of multiples of 3 0r 5 below 1024
+ * Return: Void.
  */
 
 void print_sum_mul_3(void)
@@ -22,7 +23,8 @@ void print_sum_mul_3(void)
 
 /*
  * main -> check the code
- * Return: Always 0
+ * Description: a function that runs our function
+ * Return: Always 0.
  */
 
 int main(void)
