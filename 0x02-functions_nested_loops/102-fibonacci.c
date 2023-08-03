@@ -9,7 +9,8 @@
 
 void print_fibo(void)
 {
-	int first = 1, second = 2, i, next;
+	int first = 1, second = 2, i;
+	unsigned int next;
 
 	next = first + second;
 
@@ -19,13 +20,13 @@ void print_fibo(void)
 	{
 		if (i < 50)
 		{
-			printf("%d, ", next);
+			printf("%u, ", next);
 			first = second;
 			second = next;
 			next = first + second;
 		}
 		else
-			printf("%d", next);
+			printf("%u", next);
 	}
 }
 
