@@ -9,24 +9,24 @@
 
 void print_fibo(void)
 {
-	int first = 1, second = 2, i;
-	unsigned int next;
+	long long int next, first = 1, second = 2;
+	int i;
 
 	next = first + second;
 
-	printf("%d, %d, ", first, second);
+	printf("%lld, %lld, ", first, second);
 
 	for (i = 3; i <= 50; i++)
 	{
 		if (i < 50)
 		{
-			printf("%u, ", next);
+			printf("%lld, ", next);
 			first = second;
 			second = next;
 			next = first + second;
 		}
 		else
-			printf("%u", next);
+			printf("%lld", next);
 	}
 }
 
