@@ -31,9 +31,9 @@ void print_fibo(void)
 }
 
 /*
- * main - main function
- * Description: it runs the function
- * Return: 0;
+ * main - Entry point
+ * Description: prints fibonacci
+ * Return: Always 0;
  */
 
 int main(void)
