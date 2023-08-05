@@ -24,10 +24,28 @@ void print_times_table(int n)
 			_putchar((mul % 10) + '0');
 			if (num2 != n)
 			{
-				_putchar(',');
-				_putchar(' ');
-				if (num1 * (num2 + 1) < 10)
+				if (mul < 10)
+				{
+					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (mul >= 10 && mul < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (mul >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				if (num1 * (num2 + 1) < 10)
+				{
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');

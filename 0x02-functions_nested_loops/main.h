@@ -16,4 +16,5 @@ void print_to_98(int n);
 void print_times_table(int n);
 void print_sum_mul_3();
 void print_fibo();
+void print_fibo2();
 #endif
