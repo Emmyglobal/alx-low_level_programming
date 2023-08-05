@@ -6,7 +6,7 @@
  * Description: excluding 40 000
  * Return: void
  */
-void print_fibo2()
+void print_fibo2(void)
 {
 	long unsigned int first = 1, second = 2, next, i, sum = 2;
 
@@ -33,7 +33,7 @@ void print_fibo2()
  *
  * Return: void
  */
-void main()
+int main(void)
 {
 	print_fibo2();
 	printf("\n");
