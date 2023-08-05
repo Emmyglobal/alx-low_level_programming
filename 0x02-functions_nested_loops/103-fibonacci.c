@@ -37,4 +37,5 @@ int main(void)
 {
 	print_fibo2();
 	printf("\n");
+	return (0);
 }
