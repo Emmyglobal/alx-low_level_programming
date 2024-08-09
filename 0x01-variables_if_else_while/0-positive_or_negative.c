@@ -1,11 +1,14 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
+
 /**
- * main - assigns a random number to a value of n everytime
- * it executes and prints it
- * Return: 0 if(successful)
+ * main - Entry point
+ * Description: A program for +ve and -ve check
+ *
+ * Return: Always the value of 0 (success)
  */
+
 int main(void)
 {
 	int n;
@@ -14,9 +17,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	else if (n < 0)
+	else
 		printf("%d is negative\n", n);
 	return (0);
 }
