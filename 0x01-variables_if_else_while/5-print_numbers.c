@@ -1,15 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - print all numbers from 0 to 9
- * followed by a new line
- * Return: 0 if (successful)
+ * main -> Entry point
+ * Description: number from 0 to 10
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 0; n < 10; n++)
-		printf("%d", n);
-	printf("\n");
+	for (i = 48; i <= 57; i++)
+		putchar(i);
+	putchar('\n');
 	return (0);
 }
