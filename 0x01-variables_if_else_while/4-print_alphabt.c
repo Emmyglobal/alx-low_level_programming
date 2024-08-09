@@ -1,20 +1,20 @@
 #include <stdio.h>
+
 /**
- *main - print all letters in lowercase except e and q
- * followed by a new line
- * Return: 0 if(successful)
+ * main -> Entry point
+ * Description: print lowercase except q and e
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	char ch = 'a';
+	int i;
 
-	while (ch <= 'z')
+	for (i = 97; i < 122; i++)
 	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
-		}
-		ch++;
+		if (i != 113 && i != 101 )
+			putchar(i);
 	}
 	putchar('\n');
 	return (0);
