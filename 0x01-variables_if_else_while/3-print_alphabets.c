@@ -1,17 +1,22 @@
 #include <stdio.h>
+
 /**
- *main - prints alphabets in lowercase and then in uppercase
- * followed by new line
- * Return: 0 if (Successful)
+ * main -> Entry point
+ * Description: prints both lowercase and uppercas
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int ch;
+	int i;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
+	for (i = 122; i >= 65; i--) {
+		if ((i >= 97) && (i <=122))
+			putchar(i);
+		else if ((i >= 65) && (i <= 90))
+			putchar(i);
+	}
 	putchar('\n');
 	return (0);
 }
