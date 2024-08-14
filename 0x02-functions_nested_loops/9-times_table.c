@@ -17,7 +17,7 @@ void times_table(void)
 		for (j = 48; j < 58; j++)
 		{
 			mult = (i - '0') * (j - '0');
-			if((mult < 10))
+			if ((mult < 10))
 			{
 				if (j != 48)
 					_putchar(' ');
