@@ -9,7 +9,11 @@
  */
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int i;
+	int j;
+	int k;
+	int l;
+
 	for (i = 48; i <= 50; i++ )
 	{
 		for (j = 48; j <= 57; j++)
