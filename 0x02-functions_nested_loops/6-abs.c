@@ -2,6 +2,7 @@
 
 /**
  * _abs -> computes the absolute value of an integer
+ * @b: number to find its absolute value
  * Description: Any integer can be included
  *
  * Return: 0 Always success;
