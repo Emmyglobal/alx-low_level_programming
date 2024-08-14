@@ -2,6 +2,7 @@
 
 /**
  * jack_bauer -> Prints every minute of the day of Jack Bauer
+ * @void: accepts nothing
  * Description: prints the time spent.
  *
  * Return: Nothing
