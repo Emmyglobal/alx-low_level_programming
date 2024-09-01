@@ -1,43 +1,67 @@
 #include "main.h"
 
 /**
- * print_to_98 -> prints time table
- * @n : no to start from
- * Description: print number between n and 98
- * Return:void
+ * print_to_98 -> Entry point for the function
+ * @n: The starting point of the number to be printed
+ *
+ * Return: Always 0 for success
  */
-
 void print_to_98(int n)
 {
 	int i;
+	int j;
+	int k;
 
-	for (i = n; i <= 98; i++)
+	if (n < 98)
 	{
-		if (i >= 10 && i != 98)
+
+		for (i = n; i <= 98; i++)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (i < 0)
+			{
+				_putchar('-');
+				if (i <= -10)
+					_putchar((-i / 10) + '0');
+				_putchar((-i % 10) + '0');
+			}
+			else if (i < 10)
+			{
+				_putchar(i + '0');
+			}
+			else {
+				j = i / 10;
+				k = i % 10;
+				_putchar(j + '0');
+				_putchar(k + '0');
+			}
+
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		else if (i >= 100)
+	}
+	else 
+	{
+		for (i = n; i >= 98; i--)
 		{
-			_putchar((i / 100) + '0');
-			_putchar(((i / 10) % 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else if (i == 98)
-		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-		}
-		else if (i >= 0 && i < 10)
-		{
-			_putchar(i + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (i > 99)
+			{
+				_putchar((i / 100) + '0');
+				_putchar(((i / 10) % 10) + '0');
+				_putchar((i % 10) + '0');
+			}
+			else
+			{
+				_putchar((i / 10) + '0');
+				_putchar((i % 10) + '0');
+			}
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 	_putchar('\n');
