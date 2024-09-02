@@ -1,53 +1,59 @@
 #include "main.h"
 
 /**
- * print_times_table - Prints the n times table, starting with 0.
- * @n: The n times table.
+ * @print_times_tatble -> prints the n times table, starting with 0
+ * Description -> if n is greater than 15 or less than 0, it prints nothing
  *
- * Return: Nothing.
+ * Return: Nothing
  */
 void print_times_table(int n)
 {
-	int num1, num2, mul;
-	
-	if (n < 0 || n > 15)
-		return;
-	for (num1 = 0; num1 <= n; num1++)
+	int i;
+	int j;
+	int k;
+
+	if((n >= 0) && (n <= 15))
 	{
-		for (num2 = 0; num2 <= n; num2++)
+		for (i = 0; i <= n; i++)
 		{
-			mul = num1 * num2;
-			if (mul >= 100)
-				_putchar((mul / 100) + '0');
-			if (mul >= 10)
-				_putchar(((mul / 10) % 10) + '0');
-			_putchar((mul % 10) + '0');
-			if (num2 != n)
+			for (j = 0; j <= n; j++)
 			{
-				if (mul < 10)
+				k = i * j;
+				if (k < 10)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar(k + '0');
+					if (j != n)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
 				}
-				else if (mul >= 10 && mul < 100)
+				else if (k < 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+					if (j != n)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+					}
 				}
-				else if (mul >= 100)
+				else
 				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				if (num1 * (num2 + 1) < 10)
-				{
-					_putchar(' ');
-				}
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10) % 10) + '0');
+					_putchar((k % 10) + '0');
+					if(j != n)
+					{
+						_putchar(',');
+						_putchar(' ');
+					}
+				 }
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
