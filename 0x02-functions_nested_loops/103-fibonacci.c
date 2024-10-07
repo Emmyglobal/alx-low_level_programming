@@ -6,36 +6,27 @@
  * Description: excluding 40 000
  * Return: void
  */
-void print_fibo2(void)
-{
-	long unsigned int first = 1, second = 2, next, i, sum = 2;
 
-	next = first + second;
-	for (i = 3; i <= 98; i++)
-	{
-		if (next < 4000000)
-		{
-			first = second;
-			second = next;
-			next = first + second;
-			if(next % 2 == 0)
-			{
-				sum += next;
-			}
-		}
-	}
-	printf("%lu", sum);
-
-}
-
-/**
- * main - entry point
- *
- * Return: void
- */
 int main(void)
 {
-	print_fibo2();
-	printf("\n");
+	int i;
+	int j = 0;
+	int k = 1;
+	int m;
+
+	_putchar('j' + '0');
+	_putchar(',');
+	_putchar(' ');
+	_putchar('k' + '0');
+	for (i = 3; i < 5; i++)
+	{
+		m = j + k;
+		_putchar('m' + '0');
+		j = k;
+		k = m;
+		_putchar(',');
+		_putchar(' ');
+	}
+	_putchar('\n');
 	return (0);
 }
