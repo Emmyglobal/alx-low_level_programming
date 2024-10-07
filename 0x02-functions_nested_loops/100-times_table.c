@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * @print_times_table -> prints the n times table, starting with 0
+ * print_times_table -> prints the n times table, starting with 0
  * Description -> if n is greater than 15 or less than 0, it prints nothing
+ * @n: number
  *
  * Return: Nothing
  */
 void print_times_table(int n)
 {
-	int i;
-	int j;
-	int k;
+	int i, j, k;
 
 	if ((n >= 0) && (n <= 15))
 	{
