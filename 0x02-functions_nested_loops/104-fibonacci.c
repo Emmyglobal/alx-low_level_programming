@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	unsigned int i, next, first = 1, second = 2;
+	unsigned long int i, next, first = 1, second = 2;
 
-	printf("%u, %u, ", first, second);
+	printf("%lu, %lu, ", first, second);
 	for (i = 0; i <= 95; i++)
 	{
 		next = first + second;
-		printf("%u", next);
+		printf("%lu", next);
 		if (i != 95)
 			printf(", ");
 		first = second;
