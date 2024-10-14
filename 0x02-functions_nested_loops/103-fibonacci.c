@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main -> Entry point
+ * main -> Entry point
  * Description: finds and prints the sum of the even-valued terms.
  *
  * Return : Always 0 for success
