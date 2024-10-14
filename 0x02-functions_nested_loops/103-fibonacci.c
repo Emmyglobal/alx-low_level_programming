@@ -1,32 +1,25 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_fibo2 - prints fibonacci sequence
- * Description: excluding 40 000
- * Return: void
+ * Main -> finds and prints the sum of the even-valued terms.
+ *
+ * Return : Always 0 for success
  */
 
 int main(void)
 {
-	int i;
-	int j = 0;
-	int k = 1;
-	int m;
+	long int i, sum, next, first = 0, second = 1;
 
-	_putchar('j' + '0');
-	_putchar(',');
-	_putchar(' ');
-	_putchar('k' + '0');
-	for (i = 3; i < 5; i++)
+	for (i = 0; i < 50; i++)
 	{
-		m = j + k;
-		_putchar('m' + '0');
-		j = k;
-		k = m;
-		_putchar(',');
-		_putchar(' ');
+		next = first + second;
+		if ((next <= 4000000) && (next % 2 == 0))
+		{
+			sum =+ next;
+		}
+		first = second;
+		second = next;
 	}
-	_putchar('\n');
+	printf("%ld\n", sum);
 	return (0);
 }
