@@ -8,6 +8,8 @@
 
 void print_number(int n)
 {
-	if (n < 1.0 / 0.0)
+	double inf = 1.0 / 0.0;
+
+	if (n < inf)
 		printf("%d\n", n);
 }
