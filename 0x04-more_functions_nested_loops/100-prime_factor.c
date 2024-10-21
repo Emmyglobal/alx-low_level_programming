@@ -16,7 +16,7 @@ int main(void)
 	}
 	for (i = 3; i * i <= m; i += 2)
 	{
-		while (m % i == 0)
+		while (m % i == 0 && m != i)
 		{
 			largest_prime = i;
 			m = m / i;
