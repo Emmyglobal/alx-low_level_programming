@@ -15,6 +15,6 @@ int main(void)
 		while (m % i == 0 && m != i)
 			m /= i;
 	}
-	printf("The highest prime factor is: %lu\n", m);
+	printf("%lu\n", m);
 	return (0);
 }
