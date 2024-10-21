@@ -10,14 +10,12 @@ int main(void)
 {
 	unsigned long int i, m = 612852475143;
 
-	for (i = 0; i * i <= m;)
+	for (i = 2; i * i <= m; i++)
 	{
-		if (isPrime(i) && m % i == 0)
+		while (m % i == 0)
 			m = m / i;
-		else
-			i++;
 	}
-	printf("The highest prime number is %ld\n", m);
+	printf("The highest prime number is %lu\n", m);
 	return (0);
 }
 
