@@ -8,7 +8,7 @@ int isPrime(int number);
 
 int main(void)
 {
-	long int i, m = 612852475143;
+	unsigned long int i, m = 612852475143;
 
 	for (i = 0; i * i <= m;)
 	{
@@ -34,13 +34,10 @@ int isPrime(int number)
 
 	if (number < 2)
 		return (0);
-	else
+	for (i = 2; i * i <= number; i++)
 	{
-		for (i = 2; i * i <= number; i++)
-		{
-			if (number % i == 0)
-				return (0);
-		}
-		return (1);
+		if (number % i == 0)
+			return (0);
 	}
+	return (1);
 }
