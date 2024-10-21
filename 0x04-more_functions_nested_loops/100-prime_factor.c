@@ -7,13 +7,12 @@
 
 int main(void)
 {
-	unsigned long int i = 3;
-	unsigned long int m = 612852475143;
+	unsigned long int i, m = 612852475143;
 
-	for (; i < 12057; i += 2)
+	for (i = 2; i * i <= m; i++)
 	{
-		while (m % i == 0 && m != i)
-			m /= i;
+		while (m % i == 0)
+			m = m / i;
 	}
 	printf("%lu\n", m);
 	return (0);
