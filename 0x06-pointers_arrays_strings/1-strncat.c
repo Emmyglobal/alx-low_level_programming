@@ -12,9 +12,9 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int len_src = 0, len_dest = 0;
 
-	while(dest[len_dest] != '\0')
+	while (dest[len_dest] != '\0')
 		len_dest++;
-	while(src[len_src] != '\0')
+	while (src[len_src] != '\0')
 	{
 		if (len_src < n)
 		{
