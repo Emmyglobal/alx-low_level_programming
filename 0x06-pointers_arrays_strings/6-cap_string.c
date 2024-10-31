@@ -9,23 +9,23 @@
 char *cap_string(char *str)
 {
 	char *orig = str;
-	char sep[13] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i;
+	int sep[14] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int i, cap_next = 1;
 
-	/* characterize the first character if it is a lowercase */
-	if (*str >= 'a' && *str <= 'z')
-		*str = *str - ('a' - 'A');
 	while (*str)
 	{
-		if (*str >= 'a' && *str <= 'z')
+		if (cap_next && *str >= 'a' && *str <= 'z')
 		{
-			for (i = 0; i < 13; i++)
+			*str = *str - ('a' - 'A');
+			cap_next = 0;
+		}
+		cap_next = 0;
+		for (i = 0; i < 14; i++)
+		{
+			if (*str == sep[i])
 			{
-				if (*(str - 1) == sep[i])
-				{
-					*str = *str - ('a' - 'A');
-					break;
-				}
+				cap_next = 1;
+				break;
 			}
 		}
 		str++;
