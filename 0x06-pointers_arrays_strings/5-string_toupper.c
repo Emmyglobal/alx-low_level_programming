@@ -2,7 +2,7 @@
 
 /**
  * string_toupper -> Changes all lover case letters to uppercase
- *
+ * @str: required string
  * Return: the changed character
  */
 
