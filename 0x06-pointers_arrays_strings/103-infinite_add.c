@@ -6,6 +6,7 @@
  * @n2: second number
  * @r: buffer that stores the result
  * @size_r: size of the buffer
+ * Return: 0 or r
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -38,7 +39,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[i] = '\0';
 
 	}
-	else 
+	else
 		return (0);
 	return (r);
 }
