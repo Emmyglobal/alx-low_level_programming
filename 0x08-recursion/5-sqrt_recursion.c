@@ -5,6 +5,7 @@
  * find_sqrt -> Helper function to find the sqrt
  * @n: the number to find the square root
  * @guess: The number to guess
+ * Return: an integer
  */
 
 int find_sqrt(int n, int guess)
@@ -13,7 +14,7 @@ int find_sqrt(int n, int guess)
 		return (guess);
 	if (guess * guess > n)
 		return (-1);
-	return find_sqrt(n, guess + 1);
+	return (find_sqrt(n, guess + 1));
 }
 
 /**
@@ -26,5 +27,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return find_sqrt(n, 0);
+	return (find_sqrt(n, 0));
 }
