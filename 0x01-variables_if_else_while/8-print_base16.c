@@ -1,21 +1,25 @@
 #include <stdio.h>
+
 /**
- * main - prints numbers of base 16 in lowercase
- * followed by a new line
- * Return: 0 if (successful)
+ * main -> Entry point
+ * Description: Prints Hexadecimal
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n;
-	char ch;
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i <= 102; i++)
 	{
-		putchar(n);
-	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
+		if(i >= 48 && i <= 57)
+			putchar(i);
+		else if ((i >= 97) && (i <= 102))
+		{
+			putchar(i);
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);

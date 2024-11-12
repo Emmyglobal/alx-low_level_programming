@@ -1,17 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combination of single-digits numbers
- * followed by a new line
- * Return: Always 0 (successful)
+ * main -> Entry point
+ * Description: Prints digit separated with coma
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(i);
+		if (i != 57)
 		{
 			putchar(',');
 			putchar(' ');

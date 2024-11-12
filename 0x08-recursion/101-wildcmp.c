@@ -2,7 +2,7 @@
 
 /**
  * str_len1 -> the length of first string
- * *s1: the string
+ * @s1: the string
  * Return: integer
  */
 
@@ -15,7 +15,7 @@ int str_len1(char *s1)
 
 /**
  * str_len2 -> length of the second string
- * *s2: the second string
+ * @s2: the second string
  * Return: integer
  */
 
@@ -30,9 +30,6 @@ int str_len2(char *s2)
  * check_strings -> checks if string are the same
  * @s1: first string
  * @s2: second sting
- * OB
- * @start1: starting point
- * @start2: starting point
  * Return: integer
  */
 

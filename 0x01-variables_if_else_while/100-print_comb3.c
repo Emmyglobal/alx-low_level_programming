@@ -1,25 +1,28 @@
 #include <stdio.h>
+
 /**
- * main - prints number from 00 to 89
- * Return: Always 0 (successful)
+ * main -> Entry point
+ * Description: Combination of two possible numbers
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int ch;
-	int n;
+	int i, j;
 
-	for (ch = 48; ch <= 57; ch++)
+	for (i = 48; i <= 56; i++)
 	{
-		for (n = 49; n <= 57; n++)
+		for (j = 49; j <= 57; j++)
 		{
-			if (n > ch)
+			if (i != j)
 			{
-				putchar(ch);
-				putchar(n);
-				if (ch != 56 || n != 57)
+				putchar(i);
+				putchar(j);
+				if (!(i == 56 && j == 57))
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
