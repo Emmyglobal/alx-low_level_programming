@@ -5,7 +5,7 @@
  * @min: minimum order
  * @max: maximum order
  *
- * Rerturn: pointer to the newly created array
+ * Return: pointer to the newly created array
  */
 
 int *array_range(int min, int max)
@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 	if (pta == NULL)
 		return (NULL);
 
-	for (i = 0; i < (max - min +1); i++)
+	for (i = 0; i < (max - min + 1); i++)
 		pta[i] = min + i;
 	return (pta);
 }
