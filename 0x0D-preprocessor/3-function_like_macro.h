@@ -2,6 +2,6 @@
 #define MAIN_H
 
 #define ABS(x)\
-	((x < 0) ? -1 * x : x)
+	((x) < 0 ? -(x) : (x))
 
 #endif
