@@ -1,1 +1,6 @@
-This is the readme for 0x0E-structures typedef
+# 0x0E. C - Structures, typedef
+## USING C
+
+## GENERAL
+- What are structures, when, why and how to use them
+- How to use typedef
