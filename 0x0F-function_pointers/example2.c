@@ -12,6 +12,7 @@ void sub(int a, int b)
 
 void mult(int a, int b)
 {
+	OB
 	printf("The value of multiplication is %d\n", a * b);
 }
 
