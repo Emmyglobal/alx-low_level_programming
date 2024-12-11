@@ -1,8 +1,11 @@
-# MORE SINGLY LIST
+# 0x13. C - More singly linked lists
 
-## Doing the following
-- Insertion -> Adds an element at the beginnig and the end of the list.
-- Deletion - Deletes an element at the beginning and end of the list.
-- Display - Count the number of nodes and display the complete list.
-- Search - Searches an alement using the given key.
-- Deletes - Deletes an element using the given key.
+## CONCEPT
+- C
+- Algorithm
+- Data structure
+
+## GENERAL
+
+- How to use linked lists
+- Start to look for the right source of information without too much help
