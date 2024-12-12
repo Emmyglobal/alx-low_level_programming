@@ -5,18 +5,19 @@
  * returns the head node's data (n)
  * @head: pointer to address of the first node;
  *
- * REturn: 0 if the list is empty
+ * Return: 0 if the list is empty
  */
 
 int pop_listint(listint_t **head)
 {
-	listint_t *ptr, *new;
+	listint_t *ptr;
+	int data;
 
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
-		return (NULL);
-	new->next = *head;
+	if (head == NULL || *head == NULL)
+		return (0);
 	ptr = *head;
+	data = ptr->n;
+	*head = ptr->next;
 	free(ptr);
-	return (new);
+	return (data);
 }
