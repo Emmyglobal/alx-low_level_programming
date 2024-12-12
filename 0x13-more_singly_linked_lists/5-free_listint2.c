@@ -15,7 +15,6 @@ void free_listint2(listint_t **head)
 	{
 		tmp = ptr;
 		ptr = ptr->next;
-		free(ptr->next);
 		free(tmp);
 	}
 	*head = NULL;
