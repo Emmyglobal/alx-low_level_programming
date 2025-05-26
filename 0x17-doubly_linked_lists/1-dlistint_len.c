@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_dlistint -> prints all the elements of a dlistint_t list
+ * dlistint_len -> counts all the elements of a dlistint_t list
  * @h: the head of the node
  * Return: Number of nodes
  */
