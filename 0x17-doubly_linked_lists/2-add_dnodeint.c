@@ -24,5 +24,7 @@
 
     *head = new;
 
+    free(*head);
+
     return (*head);
  }
