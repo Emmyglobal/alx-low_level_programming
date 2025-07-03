@@ -30,6 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
             current->value = strdup(value);
             return (1);
         }
+        current = current->next;
     }
 
     /* if key doesn't exist create a new key */
